@@ -1,0 +1,383 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title> Belsahtout.com </title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="Belsahtout.css">  
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta charset="UTF-8">  
+</head>
+
+<body>
+<a href="index.html">
+<img src="logo33.jpg" alt="Logo" class="logo"></a>
+    
+<div class="topnav ">
+  <a href="index.html">Home</a>
+  <div class="dropdown">
+    <button class="dropbtn">Categories
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">  
+      <div class="row2">
+        <div class="column2">
+          <h3>Clothes</h3>
+          <a href="women.html">Women</a>
+          <a class="active" href="men.html">Men</a>
+          <a href="kids.html">Kids</a>
+        </div>
+        <div class="column2">
+          <h3>Electronics</h3>
+          <a href="M&L.html">Mobiles &amp; Laptops</a>
+          <a href="gaming.html">Gaming</a>
+        </div>
+        <div class="column2">
+          <h3>Tickets</h3>
+          <a href="events.html">Events</a>
+          <a href="Cinema&theater.html">Cinema &amp; Theater</a>
+        </div>
+      </div>
+    </div>
+  </div> 
+<div class="search-container">
+    <form action="/action_page.php">
+      <input type="text" placeholder="Search.." name="search">
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+  </div>
+
+    
+  
+     <button class="sign" onclick="document.getElementById('myForm').style.display='block'" style="width:auto;">Sign Up</button>
+<div class="form-popup" id="myForm">
+  <form  action="/action_page.php" class="form-container">
+            
+    <div class="container">
+     <span onclick="document.getElementById('myForm').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <h1>Sign Up</h1>
+      <p>Please fill in this form to create an account.</p>
+
+       <hr>
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" id="psw" placeholder="Enter Password" name="psw" required>
+
+      <label for="psw-repeat"><b>Repeat Password</b></label>
+      <input type="password"  id="psw-repeat" placeholder="Repeat Password" name="psw-repeat" required>
+      
+      <label>
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+        </label>
+        <div class="try">
+       <p id="demo">Already have an account<a href="#" style="color:dodgerblue">Login</a></p> 
+        </div>
+    <button type="submit" class="btn" >Sign Up</button>
+    <button type="button" class="cancel" onclick="document.getElementById('myForm').style.display='none'">Cancel</button>
+     
+    </div>
+  </form>
+</div>
+    <div>
+<button class="sign" onclick="document.getElementById('CartF').style.display='block'" style="width:auto;">Cart <i class="fa fa-shopping-cart"></i></button>
+<div class="form-popup" id="CartF">
+  <form  action="/action_page.php" class="form-container">
+          <div class="container">
+     <span onclick="document.getElementById('CartF').style.display='none'" class="close" title="Close Modal">&times;</span>
+    
+   <div class="rowC">
+  <div class="col-75">
+    <div class="container">
+        <div class="rowC">
+          <div class="col-50">
+            <h3>Billing Address</h3>
+            <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="John M. Doe">
+            <label for="email"><i class="fa fa-envelope"></i> Email</label>
+            <input type="text" id="email" name="email" placeholder="john@example.com">
+            <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+            <input type="text" id="adr" name="address" placeholder="542 W. 15th Street">
+            <label for="city"><i class="fa fa-institution"></i> City</label>
+            <input type="text" id="city" name="city" placeholder="New York">
+
+            <div class="rowC">
+              <div class="col-50">
+                <label for="state">State</label>
+                <input type="text" id="state" name="state" placeholder="NY">
+              </div>
+              <div class="col-50">
+                <label for="zip">Zip</label>
+                <input type="text" id="zip" name="zip" placeholder="10001">
+              </div>
+            </div>
+          </div>
+
+          <div class="col-50">
+            <h3>Payment</h3>
+            <label for="fname">Accepted Cards</label>
+            <div class="icon-container">
+              <i class="fa fa-cc-visa" style="color:navy;"></i>
+              <i class="fa fa-cc-amex" style="color:blue;"></i>
+              <i class="fa fa-cc-mastercard" style="color:red;"></i>
+              <i class="fa fa-cc-discover" style="color:orange;"></i>
+            </div>
+            <label for="cname">Name on Card</label>
+            <input type="text" id="cname" name="cardname" placeholder="John More Doe">
+            <label for="ccnum">Credit card number</label>
+            <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+            <label for="expmonth">Exp Month</label>
+            <input type="text" id="expmonth" name="expmonth" placeholder="September">
+            <div class="rowC">
+              <div class="col-50">
+                <label for="expyear">Exp Year</label>
+                <input type="text" id="expyear" name="expyear" placeholder="2018">
+              </div>
+              <div class="col-50">
+                <label for="cvv">CVV</label>
+                <input type="text" id="cvv" name="cvv" placeholder="352">
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        <label>
+          <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+        </label>
+        <input type="submit" value="Add to cart" class="btn">
+        <button type="button" class="cancel" onclick="document.getElementById('CartF').style.display='none'">Cancel</button>
+   </div>
+       </div>
+        </div>
+        </div>
+         </form>
+          </div>
+           </div>
+             </div>
+
+
+
+<ul class="breadcrumb">
+  <li><a href="index.html">Home</a></li>
+  <li>Clothes</li>
+<li>Men</li>
+</ul>
+
+<div class="card">
+<h2>Polos &amp; shirts</h2>
+<hr>
+<div class="row">
+  <div class="column">
+    <img src="multipolo.jpg" alt="Polo Shirt" style="width:100%">
+  <h3>All Day Pique Polo Shirt</h3>
+  <p class="price">$25.99</p>
+      <p>Ralph Lauren</p>
+  <p><button>Add to Cart</button></p>
+  </div>
+  <div class="column">
+    <img src="stripepolo.jpg" alt="Polo Shirt" style="width:100%">
+  <h3>Green Stripe Pique Polo Shirt</h3>
+  <p class="price">$28.99</p>
+  <p>Tommy Hilfiger</p>
+  <p><button>Add to Cart</button></p>
+  </div>
+  <div class="column">
+    <img src="watermelonp.jpg" alt="Polo Shirt" style="width:100%">
+  <h3>Vintage Slub Jersey Polo Shirt</h3>
+  <p class="price">$24.99</p>
+  <p>The North Face</p>
+  <p><button>Add to Cart</button></p>
+  </div>
+</div>
+<div class="row">
+  <div class="column">
+    <img src="shortsshirt.jpg" alt="Oxford Shirt" style="width:100%">
+  <h3>Lived-In Stretch Oxford Shirt</h3>
+  <p class="price">$26.99</p>
+      <p>Zara</p>
+  <p><button>Add to Cart</button></p>
+  </div>
+  <div class="column">
+    <img src="oxfordshirt.jpg" alt="Oxford Shirt" style="width:100%">
+  <h3>Lived-In Stretch Green Oxford Shirt</h3>
+  <p class="price">$30.99</p>
+  <p>Gap</p>
+  <p><button>Add to Cart</button></p>
+  </div>
+  <div class="column">
+    <img src="redshirt.jpg" alt="Oxford Shirt" style="width:100%">
+  <h3>Lived-In Stretch Oxford Shirt</h3>
+  <p class="price">$34.99</p>
+  <p>Hollister Co.</p>
+  <p><button>Add to Cart</button></p>
+  </div>
+    </div>
+<hr>
+<h2>Jumpers &amp; cardigans</h2>
+<hr>
+<div class="row">
+  <div class="column">
+    <img src="lightpullover.jpg" alt="Pullover Sweater" style="width:100%">
+  <h3>Crewneck Pullover Sweater</h3>
+  <p class="price">$36.99</p>
+      <p>American Eagle</p>
+  <p><button>Add to Cart</button></p>
+  </div>
+  <div class="column">
+    <img src="vneck.jpg" alt="V-Neck Pullover Sweater" style="width:100%">
+  <h3>V-Neck Pullover Sweater</h3>
+  <p class="price">$29.99</p>
+  <p>H&amp;M</p>
+  <p><button>Add to Cart</button></p>
+  </div>
+  <div class="column">
+    <img src="cardiganmen.jpg" alt="Cardigan Sweater" style="width:100%">
+  <h3>Ribbed Shawl Cardigan Sweater</h3>
+  <p class="price">$39.99</p>
+  <p>Bershka</p>
+  <p><button>Add to Cart</button></p>
+  </div>
+    </div>
+<hr>
+<h2>Sweatshirts &amp; hoodies</h2>
+<hr>
+<div class="row">
+  <div class="column">
+    <img src="ziphoodiem.jpg" alt="Full-Zip Hoodie" style="width:100%">
+  <h3>Indigo Full-Zip Hoodie</h3>
+  <p class="price">$34.99</p>
+      <p>Calvin Klein</p>
+  <p><button>Add to Cart</button></p>
+  </div>
+  <div class="column">
+    <img src="gaphoodie.jpg" alt="Full-Zip Hoodie" style="width:100%">
+  <h3>Gap Logo Fleece Full-Zip Hoodie</h3>
+  <p class="price">$28.99</p>
+  <p>Gap</p>
+  <p><button>Add to Cart</button></p>
+  </div>
+  <div class="column">
+    <img src="bluehoodie.jpg" alt="Soft Pullover Hoodie" style="width:100%">
+  <h3>Vintage Soft Pullover Hoodie</h3>
+  <p class="price">$31.99</p>
+  <p>Bershka</p>
+  <p><button>Add to Cart</button></p>
+  </div>
+    </div>
+<hr>
+<h2>Jackets</h2>
+<hr>
+<div class="row">
+  <div class="column">
+    <img src="naturaljacket.jpg" alt="Denim Jacket" style="width:100%">
+  <h3>Icon Denim Jacket</h3>
+  <p class="price">$65.99</p>
+      <p>Gap</p>
+  <p><button>Add to Cart</button></p>
+  </div>
+  <div class="column">
+    <img src="rinsejacket.jpg" alt="Icon Denim Jacket" style="width:100%">
+  <h3>Icon Denim Jacket</h3>
+  <p class="price">$65.99</p>
+  <p>Gap</p>
+  <p><button>Add to Cart</button></p>
+  </div>
+  <div class="column">
+    <img src="leatherjack.jpg" alt="Leather biker jacket" style="width:100%">
+  <h3>Leather biker jacket</h3>
+  <p class="price">$72.99</p>
+  <p>Guess</p>
+  <p><button>Add to Cart</button></p>
+  </div>
+    </div>
+<div class="row">
+  <div class="column">
+    <img src="detailjacket.jpg" alt="Selvedge Denim Jacket" style="width:100%">
+  <h3>Selvedge Denim Pleat-Detail Jacket</h3>
+  <p class="price">$43.99</p>
+     <p>H&amp;M</p>
+  <p><button>Add to Cart</button></p>
+  </div>
+  <div class="column">
+    <img src="militaryjacket.jpg" alt="Military Jacket" style="width:100%">
+  <h3>Military Jacket with Hidden Hood</h3>
+  <p class="price">$55.00</p>
+  <p>Zara</p>
+  <p><button>Add to Cart</button></p>
+  </div>
+  <div class="column">
+    <img src="pufferjacket.jpg" alt="Hoded Puffer Jacket" style="width:100%">
+  <h3>ColdControl Hooded Puffer Jacket</h3>
+  <p class="price">$66.99</p>
+  <p>American Eagle</p>
+  <p><button>Add to Cart</button></p>
+  </div>
+    </div>
+<hr>
+  <h2>Jeans</h2>
+<hr>
+<div class="row">
+  <div class="column">
+    <img src="slimjeans.jpg" alt="Slim Jeans" style="width:100%">
+  <h3>Wearlight Slim Jeans with GapFlex</h3>
+  <p class="price">$47.99</p>
+      <p>Gap</p>
+  <p><button>Add to Cart</button></p>
+  </div>
+  <div class="column">
+    <img src="darkjeans.jpg" alt="Skinny Jeans" style="width:100%">
+  <h3>Wearlight Skinny Jeans</h3>
+  <p class="price">$35.99</p>
+  <p>Mobaco</p>
+  <p><button>Add to Cart</button></p>
+  </div>
+  <div class="column">
+    <img src="bleachedjeans.jpg" alt="Slim Jeans" style="width:100%">
+  <h3>Wearlight Destructed Slim Jeans</h3>
+  <p class="price">$49.99</p>
+  <p>American Eagle</p>
+  <p><button>Add to Cart</button></p>
+  </div>
+
+</div>
+
+</div>
+<br><br><br><br>
+<div class="footer">
+    <br><br>
+    <p>Free Shipping &nbsp;<i class="fa fa-truck"></i></p>
+<p>Cash on delivery&nbsp; <i class="fa fa-dollar"></i></p> 
+<p>Returns and exchange whithin 14 day&nbsp;<i class="fa fa-exchange"></i></p>
+<br>
+<h5>Stay connected</h5>
+   <div class="wrapper">
+   <a target="_blank" href="https://mail.google.com"><i class="fa fa-3x fa-google-plus"></i></a>
+   <a target="_blank" href="https://www.facebook.com"><i class="fa fa-3x fa-facebook-square"></i></a>
+   <a target="_blank" href="https://www.twitter.com"><i class="fa fa-3x fa-twitter-square"></i>
+       </a></div>
+<div class="info">
+<a href="aboutus.html">About us</a> 
+    </div>
+    <div class="rights">
+<p> &copy;2019 Belsahtout. All rights reserved </p>
+
+    </div>
+</div>
+
+
+    
+   <script>
+   
+
+document.getElementById("demo").onclick = function() {myFunction()};
+
+function myFunction() {
+  document.getElementById("demo").innerHTML = "You have been loged in";
+}
+</script>
+    </body>
+</html>
+
+
+
